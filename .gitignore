@@ -1,0 +1,34 @@
+# Dépendances Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Fichiers d'environnement
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Cache et logs
+.cache/
+logs/
+*.log
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+dist/
+out/
+.build/
+coverage/
+
+# Éditeurs et systèmes d'exploitation
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
