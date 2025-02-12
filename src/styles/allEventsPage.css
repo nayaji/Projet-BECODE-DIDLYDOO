@@ -1,0 +1,127 @@
+.text-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.all-event-list-wrapper {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  min-height: 100vh;
+  margin-bottom: 60px;
+}
+.all-event-list-wrapper .all-event-list ul .event-card {
+  min-width: 666px;
+  padding: 20px 40px;
+  border: 2px solid #d3d3d3;
+  margin-top: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.all-event-list-wrapper .all-event-list ul .event-card .text {
+  display: flex;
+  justify-content: space-between;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .text a:nth-child(2) {
+  color: red;
+  padding-left: 10px;
+}
+.all-event-list-wrapper .all-event-list ul .event-card p {
+  margin: 15px 0;
+  color: #333333;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more .dates {
+  justify-self: self-start;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more .dates a {
+  padding-right: 15px;
+  min-width: 105px;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more .participants {
+  justify-self: start;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more .participants .greyscale {
+  filter: grayscale(100%);
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more .participants img {
+  padding: 2px;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more .dates {
+  justify-self: center;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more form {
+  text-align: center;
+  display: grid;
+  gap: 5px;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more form input[type=text] {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #d3d3d3;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more form .left {
+  display: grid;
+  align-items: center;
+  background-color: #b2fab4;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more form .left:hover {
+  background-color: #a2eaa4;
+  border-color: #00e000;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more form .right {
+  display: grid;
+  align-items: center;
+  background-color: #fab2b2;
+  border: 2px solid #ff0000;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more form .right:hover {
+  background-color: #eaa2a2;
+  border-color: #e00000;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more form input[type=radio]:checked + .left {
+  background-color: #00e000;
+  border-color: #a2eaa4;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more form input[type=radio]:checked + .right {
+  background-color: #e00000;
+  border-color: #eaa2a2;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more form .bottom {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #add8e6;
+  border: 2px solid #0000ff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more form .bottom input {
+  background-color: transparent;
+  border: none;
+  padding: 5px 0;
+}
+.all-event-list-wrapper .all-event-list ul .event-card .more form .bottom:hover {
+  background-color: #87ceeb;
+  border-color: #0000cd;
+}/*# sourceMappingURL=allEventsPage.css.map */

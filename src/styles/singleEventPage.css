@@ -1,0 +1,165 @@
+.text-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single-card-wrapper {
+  display: grid;
+  align-content: space-around;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 100vh;
+}
+.single-card-wrapper .event-card {
+  min-width: 666px;
+  padding: 20px 40px;
+  border: 2px solid #d3d3d3;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.single-card-wrapper .event-card .text {
+  display: flex;
+  justify-content: space-between;
+}
+.single-card-wrapper .event-card .text a:nth-child(2) {
+  padding-left: 10px;
+  margin-right: 20px;
+  color: red;
+}
+.single-card-wrapper .event-card .text h2 {
+  color: #FF7518;
+}
+.single-card-wrapper .event-card .text button {
+  font-size: 11px;
+  height: 20px;
+  width: 80px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.single-card-wrapper .event-card .text button:hover {
+  background-color: #45a049;
+}
+.single-card-wrapper .event-card p {
+  margin: 15px 0;
+  color: #333333;
+}
+.single-card-wrapper .event-card .more {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+.single-card-wrapper .event-card .more .dates {
+  justify-self: self-start;
+}
+.single-card-wrapper .event-card .more .dates a {
+  padding-right: 15px;
+  min-width: 105px;
+}
+.single-card-wrapper .event-card .more .participants {
+  justify-self: center;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.single-card-wrapper .event-card .more .participants li {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+.single-card-wrapper .event-card .more .participants li .img-wrapper {
+  display: inline-block;
+}
+.single-card-wrapper .event-card .more .participants li .img-wrapper img {
+  margin-top: 4px;
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+}
+.single-card-wrapper .event-card .more .participants li p {
+  margin: 0;
+  display: inline-block;
+}
+.single-card-wrapper .event-card .more .participants li button.absent {
+  padding: 4px;
+  background-color: #fab2b2;
+  border: 2px solid #ff0000;
+  border-radius: 5px;
+}
+.single-card-wrapper .event-card .more .participants li button.present {
+  padding: 4px;
+  background-color: #b2fab4;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+}
+.single-card-wrapper .event-card .more form {
+  max-height: 120px;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  text-align: center;
+  display: grid;
+  gap: 5px;
+}
+.single-card-wrapper .event-card .more form input[type=text] {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #d3d3d3;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+.single-card-wrapper .event-card .more form .left {
+  display: grid;
+  align-items: center;
+  background-color: #b2fab4;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.single-card-wrapper .event-card .more form .left:hover {
+  background-color: #a2eaa4;
+  border-color: #00e000;
+}
+.single-card-wrapper .event-card .more form .right {
+  display: grid;
+  align-items: center;
+  background-color: #fab2b2;
+  border: 2px solid #ff0000;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.single-card-wrapper .event-card .more form .right:hover {
+  background-color: #eaa2a2;
+  border-color: #e00000;
+}
+.single-card-wrapper .event-card .more form input[type=radio]:checked + .left {
+  background-color: #00e000;
+  border-color: #a2eaa4;
+}
+.single-card-wrapper .event-card .more form input[type=radio]:checked + .right {
+  background-color: #e00000;
+  border-color: #eaa2a2;
+}
+.single-card-wrapper .event-card .more form .bottom {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #add8e6;
+  border: 2px solid #0000ff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.single-card-wrapper .event-card .more form .bottom input {
+  background-color: transparent;
+  border: none;
+  padding: 5px 0;
+}
+.single-card-wrapper .event-card .more form .bottom:hover {
+  background-color: #87ceeb;
+  border-color: #0000cd;
+}/*# sourceMappingURL=singleEventPage.css.map */
